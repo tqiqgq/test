@@ -32,7 +32,7 @@ function supportES2015(tsConfigPath) {
   return supportES2015['supportES2015'];
 }
 
-//dfdfdfdfdfdfd
+//dfdfdfdfdfdfdrgrgrgr
 function readTsConfig(tsConfigPath) {
   const configResult = ts.readConfigFile(tsConfigPath, ts.sys.readFile);
   return ts.parseJsonConfigFileContent(configResult.config, ts.sys,
@@ -74,7 +74,7 @@ function rxjsAlias(supportES2015) {
     return {};
   }
 }
-
+//grgrgrgrgrgr
 function ngcWebpackSetup(prod, metadata) {
   if (!metadata) {
     metadata = DEFAULT_METADATA;
@@ -117,7 +117,7 @@ function ngcWebpackSetup(prod, metadata) {
       ? [ { test: /\.js$/, use: [ buildOptimizerLoader ] } ]
       : []
   ];
-
+//rgrgrgrgr
   return {
     loaders,
     plugin: ngcWebpackPluginOptions
