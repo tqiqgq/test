@@ -4,7 +4,8 @@ const fs = require('fs');
 const helpers = require('./helpers');
 
 const APP_COMMON_CONFIG = require('./config.common.json');
-
+///dfdfdfdfddfddfdfdfdfdfdfdfdfdfdfddfdfdfdaf
+//fgfgfgfgfgffgf
 const DEFAULT_METADATA = {
   title: APP_COMMON_CONFIG.title,
   description: APP_COMMON_CONFIG.description,
@@ -31,6 +32,7 @@ function supportES2015(tsConfigPath) {
   return supportES2015['supportES2015'];
 }
 
+//dfdfdfdfdfdfd
 function readTsConfig(tsConfigPath) {
   const configResult = ts.readConfigFile(tsConfigPath, ts.sys.readFile);
   return ts.parseJsonConfigFileContent(configResult.config, ts.sys,
