@@ -44,6 +44,8 @@ function getEnvFile(suffix) {
     suffix = '.' + suffix;
   }
 
+
+
   if (suffix === null) {
     return;
   }
@@ -58,6 +60,8 @@ function getEnvFile(suffix) {
     throw new Error('Environment file not found.')
   }
 }
+
+
 
 /**
  * Read the tsconfig to determine if we should prefer ES2015 modules.
