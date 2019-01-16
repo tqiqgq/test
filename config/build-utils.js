@@ -4,8 +4,8 @@ const fs = require('fs');
 const helpers = require('./helpers');
 
 const APP_COMMON_CONFIG = require('./config.common.json');
-///dfdfdfdfddfddfdfdfdfdfdfdfdfdfdfddfdfdfdaf
-//fgfgfgfgfgffgf
+///dfdfdfdfddfddfdfdfdfdfdfdfdfdfdfddfdfdfdafefefefefe
+//fgfgfgfgfgffgffefefefefefefe
 const DEFAULT_METADATA = {
   title: APP_COMMON_CONFIG.title,
   description: APP_COMMON_CONFIG.description,
@@ -32,7 +32,7 @@ function supportES2015(tsConfigPath) {
   return supportES2015['supportES2015'];
 }
 
-//dfdfdfdfdfdfdrgrgrgr
+//dfdfdfdfdfdfdrgrgrgrefeffe
 function readTsConfig(tsConfigPath) {
   const configResult = ts.readConfigFile(tsConfigPath, ts.sys.readFile);
   return ts.parseJsonConfigFileContent(configResult.config, ts.sys,
@@ -61,7 +61,7 @@ function getEnvFile(suffix) {
 
 /**
  * Read the tsconfig to determine if we should prefer ES2015 modules.
- * Load rxjs path aliases.
+ * Load rxjs path aliases.efefe
  * https://github.com/ReactiveX/rxjs/blob/master/doc/lettable-operators.md#build-and-treeshaking
  * @param supportES2015 Set to true when the output of typescript is >= ES6
  */
@@ -95,7 +95,7 @@ function ngcWebpackSetup(prod, metadata) {
   }
 
   if (!prod && metadata.WATCH) {
-    // Force commonjs module format for TS on dev watch builds.efefefefe
+    // Force commonjs module format for TS on dev watch builds.efefefefeefefef
     ngcWebpackPluginOptions.compilerOptions = {
       module: 'commonjs'
     };
