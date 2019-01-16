@@ -95,7 +95,7 @@ function ngcWebpackSetup(prod, metadata) {
   }
 
   if (!prod && metadata.WATCH) {
-    // Force commonjs module format for TS on dev watch builds.
+    // Force commonjs module format for TS on dev watch builds.efefefefe
     ngcWebpackPluginOptions.compilerOptions = {
       module: 'commonjs'
     };
@@ -117,7 +117,7 @@ function ngcWebpackSetup(prod, metadata) {
       ? [ { test: /\.js$/, use: [ buildOptimizerLoader ] } ]
       : []
   ];
-//rgrgrgrgr
+//rgrgrgrgrefefef
   return {
     loaders,
     plugin: ngcWebpackPluginOptions
